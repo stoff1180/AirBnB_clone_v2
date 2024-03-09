@@ -8,7 +8,7 @@ from datetime import datetime
 
 def do_pack():
     """
-        generates a .tgz archine from contents of web_static
+        generates a .tgz archive from contents of web_static
     """
     time = datetime.utcnow().strftime('%Y%m%d%H%M%S')
     file_name = "versions/web_static_{}.tgz".format(time)
