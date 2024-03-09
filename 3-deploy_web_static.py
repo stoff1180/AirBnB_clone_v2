@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 A fabric script that creates and distributes an archive
+
+execute: fab -f 3-deploy_web_static.py deploy -i ~/.ssh/id_rsa -u ubuntu
 """
 from fabric.api import *
 from fabric.operations import run, put, sudo, local
