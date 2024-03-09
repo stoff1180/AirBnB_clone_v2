@@ -34,6 +34,6 @@ def do_clean(number=0):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: fab -f 3-deploy_web_static.py do_clean:number=N")
+        sys.exit("Usage: fab -f 3-deploy_web_static.py do_clean:number=N")
     else:
         do_clean(sys.argv[1].split('=')[1])
